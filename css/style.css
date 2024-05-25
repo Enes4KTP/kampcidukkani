@@ -3435,6 +3435,7 @@ input[type="button"].btn-block {
   display: block;
   width: 100%;
   padding: 0.25rem 1.5rem;
+  font-size: 13px;
   clear: both;
   font-weight: 400;
   color: #212529;
@@ -4313,6 +4314,10 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   list-style: none;
 }
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 1rem;
+}
 
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -4591,12 +4596,12 @@ input[type="button"].btn-block {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 5);
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+  color: #ff9e16;
 }
 
 .navbar-light .navbar-nav .nav-link.disabled {
@@ -4607,7 +4612,8 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
+  color: #ff9e16;
+  border-bottom: 1px solid #ff9e16;
 }
 
 .navbar-light .navbar-toggler {
@@ -9948,14 +9954,14 @@ h6 {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  padding: 20px 10px;
+  /* padding: 20px 10px; */
   color: black;
   outline: none;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #ff9d14;
+  /* color: #ff9d14; */
   color: #ff9e16;
   border-bottom: 1px solid #ff9e16;
 }
@@ -10213,6 +10219,39 @@ h6 {
 
 .menu-list li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.mega-menu-item{
+  margin: 10px 0px 25px 0px;
+}
+
+.mega-menu .dropdown-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+.mega-menu .dropdown-item {
+  padding: .5rem 1rem;
+}
+
+@media (max-width: 991.98px) {
+  .mega-menu {
+      position: static;
+      width: auto;
+  }
 }
 
 @keyframes action {
