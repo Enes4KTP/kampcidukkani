@@ -6554,6 +6554,40 @@ button.bg-danger:focus {
   background-color: #ffffff !important;
 }
 
+.bg-light-marka {
+  background-color: #ffffff !important;
+}
+
+.bg-light-marka:hover {
+  background-color: #e6e6e6 !important;
+  transform: scale(1.2);
+}
+
+.bg-light-category {
+  background-color: #ffffff !important;
+  border-radius: 20%;
+}
+
+.bg-light-category:hover {
+  background-color: #e6e6e6 !important;
+  transform: scale(1.1) translateY(-15px);
+  border: 1px solid #ff9d14;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .bg-light-category {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .bg-light-category h1 {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+}
+
 a.bg-light:hover,
 a.bg-light:focus,
 button.bg-light:hover,
@@ -10015,7 +10049,7 @@ h6 {
 
 .cat-item {
   background: #ffffff;
-  transition: 0.5s;
+  transition: 1.5s;
 }
 
 .cat-item:hover {
@@ -10027,7 +10061,7 @@ h6 {
 }
 
 .cat-item:hover img {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.1) rotate(-4deg);
 }
 
 .product-item {
