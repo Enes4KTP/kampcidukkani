@@ -83,6 +83,15 @@
         }
     });
 
+    $(document).ready(function() {
+        $('.menu-toggle').on('click', function() {
+            $('#side-menu').addClass('open');
+        });
+        
+        $('#menu-close').on('click', function() {
+            $('#side-menu').removeClass('open');
+        });
+    });
 
     // Product Quantity
     $('.quantity button').on('click', function () {

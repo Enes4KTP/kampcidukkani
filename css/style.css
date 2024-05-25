@@ -901,7 +901,7 @@ pre code {
     max-width: 100%;
   }
   .col-sm-1 {
-    flex: 0 0 8.33333%;
+    flex: 0 0 5.33333%;
     max-width: 8.33333%;
   }
   .col-sm-2 {
@@ -3024,7 +3024,7 @@ input[type="button"].btn-block {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -180%;
   z-index: 1000;
   display: none;
   float: left;
@@ -9502,13 +9502,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-dark .navbar-nav .nav-link {
   padding: 20px 10px;
-  color: #F5F5F5;
+  color: black;
   outline: none;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #FFD333;
+  color: #ff9e16;
+  border-bottom: 1px solid #ff9e16;
 }
 
 @media (max-width: 991.98px) {
@@ -9700,6 +9701,70 @@ a.text-dark:hover, a.text-dark:focus {
   bottom: 30px;
   z-index: 11;
   animation: action 1s infinite alternate;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ff9e16;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-toggle i {
+  font-size: 20px;
+}
+
+.side-menu {
+  width: 300px;
+  height: 100%;
+  background-color: #ff9e16;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #e98800;
+  color: white;
+}
+
+.menu-close {
+  cursor: pointer;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-list li a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.menu-list li a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 @keyframes action {
