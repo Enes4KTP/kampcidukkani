@@ -1,7 +1,6 @@
 (function ($) {
   "use strict";
 
-  // Dropdown on mouse hover
   $(document).ready(function () {
     function toggleNavbarMethod() {
       if ($(window).width() > 992) {
@@ -20,7 +19,6 @@
     $(window).resize(toggleNavbarMethod);
   });
 
-  // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $(".back-to-top").fadeIn("slow");
@@ -40,7 +38,6 @@
     return false;
   });
 
-  // Vendor carousel
   $(".vendor-carousel").owlCarousel({
     loop: true,
     margin: 29,
@@ -65,8 +62,6 @@
       },
     },
   });
-
-  // Related carousel
   $(".related-carousel").owlCarousel({
     loop: true,
     margin: 29,
@@ -100,7 +95,7 @@
   });
 
   $(document).ready(function () {
-    /* Sports */
+
     $("#sportsMenu").click(function () {
       $("#megaWomenMenu").stop(true, true).slideUp();
       $("#megaKidsMenu").stop(true, true).slideUp();
@@ -132,7 +127,7 @@
       }
     );
 
-    /* Women */
+   
     $("#womenMenu").click(function () {
       setTimeout(function () {
         $("#megaWomenMenu").stop(true, true).slideDown();
@@ -163,7 +158,7 @@
         $("#womenMenu").removeClass("active");
       }
     );
-    /* Men */
+ 
     $("#menMenu").click(function () {
       setTimeout(function () {
         $("#megaMenMenu").stop(true, true).slideDown();
@@ -194,7 +189,7 @@
         $("#menMenu").removeClass("active");
       }
     );
-    /* Kids */
+
     $("#kidsMenu").click(function () {
       setTimeout(function () {
         $("#kidsMenu").addClass("active");
@@ -226,7 +221,7 @@
       }
     );
 
-    /* Accessories */
+
     $("#accessoriesMenu").click(function () {
       setTimeout(function () {
         $("#equipmentsMenu").removeClass("active");
@@ -258,7 +253,7 @@
       }
     );
 
-    /* Equipments */
+
     $("#equipmentsMenu").click(function () {
       setTimeout(function () {
         $("#accessoriesMenu").removeClass("active");
@@ -290,7 +285,7 @@
       }
     );
 
-    /* All */
+
     $("#allMenu").click(function () {
       setTimeout(function () {
         $("#allMenu").addClass("active");
@@ -322,7 +317,7 @@
       }
     );
 
-    /* Nutrients */
+
     $("#nutrientsMenu").click(function () {
       setTimeout(function () {
         $("#accessoriesMenu").removeClass("active");
@@ -357,7 +352,7 @@
 
   $(document).ready(function () {});
 
-  // Product Quantity
+
   $(".quantity button").on("click", function () {
     var button = $(this);
     var oldValue = button.parent().parent().find("input").val();
