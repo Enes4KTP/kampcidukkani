@@ -2778,7 +2778,7 @@ fieldset:disabled a.btn {
 }
 
 .info-box {
-  background-color: #4b87e0;
+  background-color: #ff9e17;
   height: 15rem;
   padding: 20px;
   border-radius: 10px;
@@ -6621,7 +6621,7 @@ button.bg-danger:focus {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid #3b89ff;
+  border: 1px solid #ff9d14;
   margin: 10px;
   background-color: #f8f9fa;
   transition: transform 0.3s;
@@ -10200,6 +10200,14 @@ h6 {
   animation: action 1s infinite alternate;
 }
 
+.instagram {
+  position: fixed;
+  display: none;
+  right: 30px;
+  bottom: 100px;
+  z-index: 11;
+}
+
 .menu-toggle {
   cursor: pointer;
   padding: 10px;
@@ -10320,10 +10328,22 @@ h6 {
   padding: 0.5rem 1rem;
 }
 
+.logoDiv {
+  display: none;
+}
+
 @media (max-width: 991.98px) {
   .mega-menu {
     position: static;
     width: auto;
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .logoDiv {
+    display: block;
+    z-index: 1;
+    margin: auto;
   }
 }
 
@@ -10332,6 +10352,6 @@ h6 {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-15px);
+    transform: translateY(-8px);
   }
 }

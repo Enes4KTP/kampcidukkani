@@ -33,6 +33,13 @@
     return false;
   });
 
+  $(".instagram").show();
+  $(".instagram").click(function () {
+    window.location.href =
+      "https://www.instagram.com/kampcidukkani?igsh=eW01dmJ2MHRrd3Qz";
+    return false;
+  });
+
   // Vendor carousel
   $(".vendor-carousel").owlCarousel({
     loop: true,
