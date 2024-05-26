@@ -2777,6 +2777,19 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, 0.5);
 }
 
+.info-box {
+  background-color: #99a4b5;
+  height: 15rem;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info-box img {
+  height: 50%;
+}
+
 .btn-light {
   color: #212529;
   background-color: #ffffff;
@@ -6569,29 +6582,48 @@ button.bg-danger:focus {
   transform: scale(1.2);
 }
 
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
+  overflow-x: auto; /* Yatay kaydırma için */
+  white-space: nowrap; /* İçerik tek satırda kalır */
+}
+
+.swiper-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for webkit browsers */
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  flex-shrink: 0; /* Shrink olmasını engelle */
+}
 .bg-light-category {
-  background-color: #ffffff !important;
-  border-radius: 20%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s;
 }
 
 .bg-light-category:hover {
-  background-color: #e6e6e6 !important;
   transform: scale(1.1) translateY(-15px);
-  border: 1px solid #ff9d14;
-  height: 100px;
+  border: 1px solid #3b89ff;
+  background-color: #a6c2ed;
 }
 
-@media (max-width: 768px) {
-  .bg-light-category {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-
-  .bg-light-category h1 {
-    margin-bottom: 10px;
-    margin-right: 0;
-  }
+.bg-light-category h5:hover {
+  color: white;
 }
 
 a.bg-light:hover,
@@ -10157,6 +10189,14 @@ h6 {
   animation: action 1s infinite alternate;
 }
 
+.Instagram {
+  position: fixed;
+  display: none;
+  left: 30px;
+  bottom: 30px;
+  z-index: 11;
+  animation: action 1s infinite alternate;
+}
 .menu-toggle {
   cursor: pointer;
   padding: 10px;
@@ -10221,12 +10261,12 @@ h6 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.topBarBtn{
+.topBarBtn {
   box-sizing: border-box;
   border: none;
   height: 60px;
   color: white;
-  background-color:#ff9e17 ;
+  background-color: #ff9e17;
   border-radius: 20px;
   width: 30%;
   padding: 5px;
@@ -10234,13 +10274,12 @@ h6 {
   margin: 0px 10px;
 }
 
-.topBarBtn p{
+.topBarBtn p {
   font-size: 12px;
 }
 
-.topBarBtn:hover{
+.topBarBtn:hover {
   opacity: 0.7;
-
 }
 
 .mega-menu {
@@ -10255,25 +10294,24 @@ h6 {
   z-index: 1000;
 }
 
-.mega-menu-item{
+.mega-menu-item {
   margin: 10px 0px 25px 0px;
-  
 }
 
 .mega-menu .dropdown-header {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mega-menu .dropdown-item {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 @media (max-width: 991.98px) {
   .mega-menu {
-      position: static;
-      width: auto;
+    position: static;
+    width: auto;
   }
 }
 
