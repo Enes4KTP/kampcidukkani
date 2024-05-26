@@ -10222,7 +10222,7 @@ h6 {
   top: 0;
   left: -300px;
   transition: left 0.3s ease;
-  z-index: 1000;
+  z-index: 1001;
   overflow-y: auto;
 }
 

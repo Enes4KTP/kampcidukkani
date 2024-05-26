@@ -103,6 +103,14 @@
       $("#megaAllMenu").stop(true, true).slideUp();
       $("#megaNutrientsMenu").stop(true, true).slideUp();
       setTimeout(function () {
+        $("#sportsMenu").addClass("active");
+        $("#equipmentsMenu").removeClass("active");
+        $("#accessoriesMenu").removeClass("active");
+        $("#kidsMenu").removeClass("active");
+        $("#allMenu").removeClass("active");
+        $("#womenMenu").removeClass("active");
+        $("#menMenu").removeClass("active");
+        $("#nutrientsMenu").removeClass("active");
         $("#megaSportMenu").stop(true, true).slideDown();
       }, 300);
     });
@@ -113,6 +121,7 @@
       },
       function () {
         $(this).stop(true, true).slideUp();
+        $("#sportsMenu").removeClass("active");
       }
     );
 
@@ -120,6 +129,14 @@
     $("#womenMenu").click(function () {
       setTimeout(function () {
         $("#megaWomenMenu").stop(true, true).slideDown();
+        $("#womenMenu").addClass("active");
+        $("#equipmentsMenu").removeClass("active");
+        $("#accessoriesMenu").removeClass("active");
+        $("#kidsMenu").removeClass("active");
+        $("#allMenu").removeClass("active");
+        $("#sportsMenu").removeClass("active");
+        $("#menMenu").removeClass("active");
+        $("#nutrientsMenu").removeClass("active");
       }, 300);
       $("#megaSportMenu").stop(true, true).slideUp();
       $("#megaKidsMenu").stop(true, true).slideUp();
@@ -136,12 +153,21 @@
       },
       function () {
         $(this).stop(true, true).slideUp();
+        $("#womenMenu").removeClass("active");
       }
     );
     /* Men */
     $("#menMenu").click(function () {
       setTimeout(function () {
         $("#megaMenMenu").stop(true, true).slideDown();
+        $("#menMenu").addClass("active");
+        $("#equipmentsMenu").removeClass("active");
+        $("#accessoriesMenu").removeClass("active");
+        $("#kidsMenu").removeClass("active");
+        $("#allMenu").removeClass("active");
+        $("#sportsMenu").removeClass("active");
+        $("#womenMenu").removeClass("active");
+        $("#nutrientsMenu").removeClass("active");
       }, 300);
       $("#megaSportMenu").stop(true, true).slideUp();
       $("#megaKidsMenu").stop(true, true).slideUp();
@@ -158,11 +184,20 @@
       },
       function () {
         $(this).stop(true, true).slideUp();
+        $("#menMenu").removeClass("active");
       }
     );
     /* Kids */
     $("#kidsMenu").click(function () {
       setTimeout(function () {
+        $("#kidsMenu").addClass("active");
+        $("#equipmentsMenu").removeClass("active");
+        $("#accessoriesMenu").removeClass("active");
+        $("#menMenu").removeClass("active");
+        $("#allMenu").removeClass("active");
+        $("#sportsMenu").removeClass("active");
+        $("#womenMenu").removeClass("active");
+        $("#nutrientsMenu").removeClass("active");
         $("#megaKidsMenu").stop(true, true).slideDown();
       }, 300);
       $("#megaSportMenu").stop(true, true).slideUp();
@@ -179,6 +214,7 @@
         $(this).stop(true, true).slideDown();
       },
       function () {
+        $("#kidsMenu").removeClass("active");
         $(this).stop(true, true).slideUp();
       }
     );
@@ -186,6 +222,14 @@
     /* Accessories */
     $("#accessoriesMenu").click(function () {
       setTimeout(function () {
+        $("#equipmentsMenu").removeClass("active");
+        $("#kidsMenu").removeClass("active");
+        $("#menMenu").removeClass("active");
+        $("#allMenu").removeClass("active");
+        $("#sportsMenu").removeClass("active");
+        $("#womenMenu").removeClass("active");
+        $("#nutrientsMenu").removeClass("active");
+        $("#accessoriesMenu").addClass("active");
         $("#megaAccessoriesMenu").stop(true, true).slideDown();
       }, 300);
       $("#megaSportMenu").stop(true, true).slideUp();
@@ -202,6 +246,7 @@
         $(this).stop(true, true).slideDown();
       },
       function () {
+        $("#accessoriesMenu").removeClass("active");
         $(this).stop(true, true).slideUp();
       }
     );
@@ -209,6 +254,14 @@
     /* Equipments */
     $("#equipmentsMenu").click(function () {
       setTimeout(function () {
+        $("#accessoriesMenu").removeClass("active");
+        $("#kidsMenu").removeClass("active");
+        $("#menMenu").removeClass("active");
+        $("#allMenu").removeClass("active");
+        $("#sportsMenu").removeClass("active");
+        $("#womenMenu").removeClass("active");
+        $("#nutrientsMenu").removeClass("active");
+        $("#equipmentsMenu").addClass("active");
         $("#megaEquipmentsMenu").stop(true, true).slideDown();
       }, 300);
       $("#megaSportMenu").stop(true, true).slideUp();
@@ -225,6 +278,7 @@
         $(this).stop(true, true).slideDown();
       },
       function () {
+        $("#equipmentsMenu").removeClass("active");
         $(this).stop(true, true).slideUp();
       }
     );
@@ -232,6 +286,14 @@
     /* All */
     $("#allMenu").click(function () {
       setTimeout(function () {
+        $("#allMenu").addClass("active");
+        $("#accessoriesMenu").removeClass("active");
+        $("#kidsMenu").removeClass("active");
+        $("#menMenu").removeClass("active");
+        $("#equipmentsMenu").removeClass("active");
+        $("#sportsMenu").removeClass("active");
+        $("#womenMenu").removeClass("active");
+        $("#nutrientsMenu").removeClass("active");
         $("#megaAllMenu").stop(true, true).slideDown();
       }, 300);
       $("#megaSportMenu").stop(true, true).slideUp();
@@ -248,6 +310,7 @@
         $(this).stop(true, true).slideDown();
       },
       function () {
+        $("#allMenu").removeClass("active");
         $(this).stop(true, true).slideUp();
       }
     );
@@ -255,6 +318,14 @@
     /* Nutrients */
     $("#nutrientsMenu").click(function () {
       setTimeout(function () {
+        $("#accessoriesMenu").removeClass("active");
+        $("#kidsMenu").removeClass("active");
+        $("#menMenu").removeClass("active");
+        $("#equipmentsMenu").removeClass("active");
+        $("#sportsMenu").removeClass("active");
+        $("#womenMenu").removeClass("active");
+        $("#allMenu").removeClass("active");
+        $("#nutrientsMenu").addClass("active");
         $("#megaNutrientsMenu").stop(true, true).slideDown();
       }, 300);
       $("#megaSportMenu").stop(true, true).slideUp();
@@ -271,16 +342,13 @@
         $(this).stop(true, true).slideDown();
       },
       function () {
+        $("#nutrientsMenu").removeClass("active");
         $(this).stop(true, true).slideUp();
       }
     );
   });
 
-  $(document).ready(function () {
-    
-
-
-  });
+  $(document).ready(function () {});
 
   // Product Quantity
   $(".quantity button").on("click", function () {
