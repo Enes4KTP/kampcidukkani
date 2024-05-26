@@ -3472,7 +3472,7 @@ input[type="button"].btn-block {
 
 .dropdown-header {
   display: block;
-  padding: 0.5rem 1.5rem;
+  /* padding: 0.5rem 1.5rem; */
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #6c757d;
@@ -10221,6 +10221,28 @@ h6 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.topBarBtn{
+  box-sizing: border-box;
+  border: none;
+  height: 60px;
+  color: white;
+  background-color:#ff9e17 ;
+  border-radius: 20px;
+  width: 30%;
+  padding: 5px;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.topBarBtn p{
+  font-size: 12px;
+}
+
+.topBarBtn:hover{
+  opacity: 0.7;
+
+}
+
 .mega-menu {
   display: none;
   position: absolute;
@@ -10235,6 +10257,7 @@ h6 {
 
 .mega-menu-item{
   margin: 10px 0px 25px 0px;
+  
 }
 
 .mega-menu .dropdown-header {
