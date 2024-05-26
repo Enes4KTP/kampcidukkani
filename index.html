@@ -34,6 +34,9 @@
 </head>
 
 <body>
+  <!-- <div class="" style="width: 7
+  0%;height: 100%;background-color: black; position: absolute; z-index: 999;">A</div> -->
+
   <!-- Topbar Start -->
   <div class="container-fluid">
     <div class="row align-items-center bg-light py-3 px-xl-5 d-none d-lg-flex">
@@ -82,7 +85,7 @@
           <span class="menu-close" id="menu-close">&times; Kapat</span>
         </div>
         <ul class="menu-list">
-          <li><a href="#">Sporlar</a></li>
+          <li><a href="#" id="">Sporlar</a></li>
           <li><a href="#">Kadın</a></li>
           <li><a href="#">Erkek</a></li>
           <li><a href="#">Çocuk</a></li>
@@ -118,37 +121,185 @@
           </div>
         </nav>
         <div class="dropdown-menu mega-menu" id="megaSportMenu">
-          <div class="column">
-            <div class="col-lg-3">
-              <h6 class="dropdown-header">A</h6>
-              <a class="dropdown-item" href="#">Avcılık</a>
-              <a class="dropdown-item" href="#">Badminton</a>
-              <a class="dropdown-item" href="#">Bale, Dans</a>
-              <a class="dropdown-item" href="#">Balıkçılık</a>
-              <a class="dropdown-item" href="#">Basketbol</a>
-            </div>
-            <div class="col-lg-3">
-              <h6 class="dropdown-header">B</h6>
-              <a class="dropdown-item" href="#">Bilardo</a>
-              <a class="dropdown-item" href="#">Binicilik</a>
-              <a class="dropdown-item" href="#">Bisiklet</a>
-              <a class="dropdown-item" href="#">Boks</a>
-              <a class="dropdown-item" href="#">Bushcraft</a>
-            </div>
-            <div class="col-lg-3">
-              <h6 class="dropdown-header">C</h6>
-              <a class="dropdown-item" href="#">Kamp</a>
-              <a class="dropdown-item" href="#">Hiking, Trekking, Outdoor</a>
-              <a class="dropdown-item" href="#">Futbol</a>
-            </div>
+          <div class="d-flex">
+            <div class="d-flex flex-column" style="width: 18%;">
+              <div style="padding: 0px; padding-bottom: 20px; border-bottom: 1px solid black;">
+                <form action="">
+                  <div class="input-group">
+                    <input type="text" class="form-control"
+                      style="height: 50px; border-radius: 20px; position: relative;" placeholder="Ürün ara...">
+                    <span style="position: absolute; right: 0px; border-radius: 20px;
+                  height: 100%;" class="input-group-text bg-transparent text-primary">
+                      <i class="fa fa-search"></i>
+                    </span>
+                    <!-- <div class="input-group-append">
+                    
+                  </div> -->
+                  </div>
+                </form>
+              </div>
+              <div class="overflow-auto" style="height:450px; margin-top: 25px;">
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">A</h6>
+                  <a class="dropdown-item" href="#">Avcılık</a>
 
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">B</h6>
+                  <a class="dropdown-item" href="#">Badminton</a>
+                  <a class="dropdown-item" href="#">Bale, Dans</a>
+                  <a class="dropdown-item" href="#">Balıkçılık</a>
+                  <a class="dropdown-item" href="#">Basketbol</a>
+                  <a class="dropdown-item" href="#">Bilardo</a>
+                  <a class="dropdown-item" href="#">Binicilik</a>
+                  <a class="dropdown-item" href="#">Bisiklet</a>
+                  <a class="dropdown-item" href="#">Boks</a>
+                  <a class="dropdown-item" href="#">Bushcraft</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">D</h6>
+                  <a class="dropdown-item" href="#">Dalış</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">F</h6>
+                  <a class="dropdown-item" href="#">Fitness Kardiyo</a>
+                  <a class="dropdown-item" href="#">Futbol</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">G</h6>
+                  <a class="dropdown-item" href="#">Golf</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">H</h6>
+                  <a class="dropdown-item" href="#">Hiking, Trekking, Outdoor</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">J</h6>
+                  <a class="dropdown-item" href="#">Jimnastik, Trambolin</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">K</h6>
+                  <a class="dropdown-item" href="#">Kamp</a>
+                  <a class="dropdown-item" href="#">Kano ve SUP</a>
+                  <a class="dropdown-item" href="#">Kayak, Snowboard</a>
+                  <a class="dropdown-item" href="#">Koşu ve Yürüyüş</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">M</h6>
+                  <a class="dropdown-item" href="#">Masa Tenisi</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">K</h6>
+                  <a class="dropdown-item" href="#">Kamp</a>
+                  <a class="dropdown-item" href="#">Kano ve SUP</a>
+                  <a class="dropdown-item" href="#">Kayak, Snowboard</a>
+                  <a class="dropdown-item" href="#">Koşu ve Yürüyüş</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">O</h6>
+                  <a class="dropdown-item" href="#">Okçuluk</a>
+                  <a class="dropdown-item" href="#">Oryantiring</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">P</h6>
+                  <a class="dropdown-item" href="#">Padel</a>
+                  <a class="dropdown-item" href="#">Paten,Kaykay ve Scooter</a>
+                  <a class="dropdown-item" href="#">Pilates,Fitness Hafif Antrenman</a>
+                  <a class="dropdown-item" href="#">Plaj Tenisi, Speedball</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">R</h6>
+                  <a class="dropdown-item" href="#">Rüzgar Sporları</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">S</h6>
+                  <a class="dropdown-item" href="#">Sörf</a>
+                  <a class="dropdown-item" href="#">Sportif Çocuk ve Beden Eğitimi</a>
+                  <a class="dropdown-item" href="#">Squash</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">T</h6>
+                  <a class="dropdown-item" href="#">Tenis</a>
+                  <a class="dropdown-item" href="#">Tırmanış ve Dağcılık</a>
+                  <a class="dropdown-item" href="#">Tüm Fitness, Pilates, Yoga Kıyafetleri</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">V</h6>
+                  <a class="dropdown-item" href="#">Voleybol</a>
+                  <a class="dropdown-item" href="#">Vücut Geliştirme / Bodybuilding</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">W</h6>
+                  <a class="dropdown-item" href="#">Windsurf</a>
+                </div>
+                <div class="col-lg-3" style="padding: 0px;">
+                  <h6 class="dropdown-header">Y</h6>
+                  <a class="dropdown-item" href="#">Yelken</a>
+                  <a class="dropdown-item" href="#">Yoga</a>
+                  <a class="dropdown-item" href="#">Yüzme</a>
+                </div>
+              </div>
+            </div>
+            <div style="width: 85%; padding: 30px 50px; font-weight: bold; color: black; ">
+              <p style="font-size: 1.2rem;">Tavsiye ettiğimiz sporlar</p>
+              <div class="d-flex">
+                <div class="col-lg-3 mega-menu-item">
+                  <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
+                    <img width="32px" height="32px" src="img/tent.png" />
+                    <h6 class="dropdown-header">Kamp</h6>
+                  </div>
+                  <a class="dropdown-item" href="#">Çadır ve Gölgelikler</a>
+                  <a class="dropdown-item" href="#">Kişi Sayısına Göre Çadırlar</a>
+                  <a class="dropdown-item" href="#">Kamp Mobilyaları</a>
+                  <a class="dropdown-item" href="#">Uyku Ekipmanları</a>
+                  <a class="dropdown-item" href="#">Kamp Mutfağı</a>
+                  <a class="dropdown-item" href="#">Ekipmanlar</a>
+                </div>
+                <div class="col-lg-3 mega-menu-item">
+                  <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
+                    <img width="32px" height="32px" src="img/camp-chair.png" />
+                    <h6 class="dropdown-header">Hiking,Trekking,Outdoor</h6>
+                  </div>
+                  <a class="dropdown-item" href="#">Ayakkabı ve Sandaletler</a>
+                  <a class="dropdown-item" href="#">Giyim</a>
+                  <a class="dropdown-item" href="#">Sırt Çantası ve Aksesuarlar</a>
+                  <a class="dropdown-item" href="#">Ekipmanlar</a>
+                  <a class="dropdown-item" href="#">Bakım, Onarım ve Yedek Parçalar</a>
+                  <a class="dropdown-item" href="#">Koleksiyonlar</a>
+                </div>
+                <div class="col-lg-3 mega-menu-item">
+                  <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
+                    <img width="32px" height="32px" src="img/ball.png" />
+                    <h6 class="dropdown-header">Futbol</h6>
+                  </div>
+                  <a class="dropdown-item" href="#">Tüm Futbol Ekipmanları</a>
+                  <a class="dropdown-item" href="#">Futbol Topları</a>
+                  <a class="dropdown-item" href="#">Krampon ve Halı Saha Ayakkabısı</a>
+                  <a class="dropdown-item" href="#">Kaleci Ekipmanları</a>
+                  <a class="dropdown-item" href="#">Antrenman Çantaları</a>
+                  <a class="dropdown-item" href="#">Futbol Forma ve Kıyafetleri</a>
+                </div>
+                <div class="col-lg-3 mega-menu-item">
+                  <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
+                    <img width="32px" height="32px" src="img/fitness.png" />
+                    <h6 class="dropdown-header">Fitness Kardiyo</h6>
+                  </div>
+                  <a class="dropdown-item" href="#">Fitness Kardiyo Aletleri</a>
+                  <a class="dropdown-item" href="#">Fitness, Vücut Geliştirme Ekipmanları</a>
+                  <a class="dropdown-item" href="#">Ağırlık Setleri ve Dambıl Setleri</a>
+                  <a class="dropdown-item" href="#">Kadın Fitness ve Pilates Kıyafetleri</a>
+                  <a class="dropdown-item" href="#">Erkek Fitness ve Pilates Kıyafetleri</a>
+                  <a class="dropdown-item" href="#">Fitness Aksesuarları</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="dropdown-menu mega-menu" id="megaWomenMenu">
           <div class="row">
             <div class="col-lg-3 mega-menu-item">
               <div class="d-flex justify-content-start" style="border-bottom: 1px solid #ff9d14;">
-                <img width="32px" height="32px" src="img/tshirt.png"/>
+                <img width="32px" height="32px" src="img/tshirt.png" />
                 <h6 class="dropdown-header">Giyim</h6>
               </div>
 
@@ -161,7 +312,7 @@
             </div>
             <div class="col-lg-3 mega-menu-item">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
-                <img width="32px" height="32px" src="img/sneakers.png"/>
+                <img width="32px" height="32px" src="img/sneakers.png" />
                 <h6 class="dropdown-header">Ayakkabılar</h6>
               </div>
               <a class="dropdown-item" href="#">Spor Ayakkabılar</a>
@@ -170,7 +321,7 @@
             </div>
             <div class="col-lg-3 mega-menu-item">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
-                <img width="32px" height="32px" src="img/sunglasses.png"/>
+                <img width="32px" height="32px" src="img/sunglasses.png" />
 
                 <h6 class="dropdown-header">Aksesuarlar</h6>
               </div>
@@ -183,7 +334,7 @@
             </div>
             <div class="col-lg-3 mega-menu-item">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
-                <img width="32px" height="32px" src="img/leggings.png"/>
+                <img width="32px" height="32px" src="img/leggings.png" />
 
                 <h6 class="dropdown-header">İç Giyim</h6>
               </div>
@@ -192,7 +343,7 @@
             </div>
             <div class="col-lg-3 mega-menu-item">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
-                <img width="35px" height="35px" src="img/swimsuit.png"/>
+                <img width="35px" height="35px" src="img/swimsuit.png" />
 
                 <h6 class="dropdown-header">Mayolar ve Bikiniler</h6>
               </div>
@@ -210,7 +361,7 @@
           <div class="row">
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
-                <img width="35px" height="35px" src="img/tshirt.png"/>
+                <img width="35px" height="35px" src="img/tshirt.png" />
                 <h6 class="dropdown-header">Giyim</h6>
               </div>
               <a class="dropdown-item" href="#">Tişörtler</a>
@@ -222,7 +373,7 @@
             </div>
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
-                <img width="32px" height="32px" src="img/sneakers.png"/>
+                <img width="32px" height="32px" src="img/sneakers.png" />
                 <h6 class="dropdown-header">Ayakkabılar</h6>
               </div>
               <a class="dropdown-item" href="#">Erkek Spor Ayakkabılar</a>
@@ -232,7 +383,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/sunglasses.png"/>
+                <img width="32px" height="32px" src="img/sunglasses.png" />
                 <h6 class="dropdown-header">Aksesuarlar</h6>
               </div>
 
@@ -247,7 +398,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/leggins2.png"/>
+                <img width="32px" height="32px" src="img/leggins2.png" />
                 <h6 class="dropdown-header">İç Giyim</h6>
               </div>
 
@@ -257,7 +408,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/swimwear.png"/>
+                <img width="32px" height="32px" src="img/swimwear.png" />
                 <h6 class="dropdown-header">Mayolar ve Deniz Şortları</h6>
               </div>
 
@@ -273,7 +424,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/tshirt.png"/>
+                <img width="32px" height="32px" src="img/tshirt.png" />
                 <h6 class="dropdown-header">Giyim</h6>
               </div>
 
@@ -283,7 +434,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/sneakers.png"/>
+                <img width="32px" height="32px" src="img/sneakers.png" />
                 <h6 class="dropdown-header">Ayakkabılar</h6>
               </div>
 
@@ -294,7 +445,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/sunglasses.png"/>
+                <img width="32px" height="32px" src="img/sunglasses.png" />
                 <h6 class="dropdown-header">Aksesuarlar</h6>
               </div>
 
@@ -308,7 +459,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/trampoline.png"/>
+                <img width="32px" height="32px" src="img/trampoline.png" />
                 <h6 class="dropdown-header">Ekipmanlar</h6>
               </div>
 
@@ -322,7 +473,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/overalls.png"/>
+                <img width="32px" height="32px" src="img/overalls.png" />
                 <h6 class="dropdown-header">Bebek</h6>
               </div>
 
@@ -333,7 +484,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/swimwear.png"/>
+                <img width="32px" height="32px" src="img/swimwear.png" />
                 <h6 class="dropdown-header">Çocuk Mayo ve Bikiniler</h6>
               </div>
 
@@ -345,7 +496,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/school-bag.png"/>
+                <img width="32px" height="32px" src="img/school-bag.png" />
                 <h6 class="dropdown-header">Okul Çantaları</h6>
               </div>
 
@@ -357,7 +508,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/cap.png"/>
+                <img width="32px" height="32px" src="img/cap.png" />
                 <h6 class="dropdown-header">Şapkalar</h6>
               </div>
 
@@ -365,7 +516,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/sunglasses2.png"/>
+                <img width="32px" height="32px" src="img/sunglasses2.png" />
                 <h6 class="dropdown-header">Güneş Gözlükleri</h6>
               </div>
 
@@ -374,7 +525,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/gloves_6266328.png"/>
+                <img width="32px" height="32px" src="img/gloves_6266328.png" />
                 <h6 class="dropdown-header">Eldivenler</h6>
               </div>
 
@@ -383,7 +534,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/socks.png"/>
+                <img width="32px" height="32px" src="img/socks.png" />
                 <h6 class="dropdown-header">Çoraplar</h6>
               </div>
 
@@ -391,7 +542,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/wristwatch.png"/>
+                <img width="32px" height="32px" src="img/wristwatch.png" />
                 <h6 class="dropdown-header">Saatler</h6>
               </div>
 
@@ -400,7 +551,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/shopping-bag.png"/>
+                <img width="32px" height="32px" src="img/shopping-bag.png" />
                 <h6 class="dropdown-header">Çantalar</h6>
               </div>
 
@@ -414,7 +565,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/beanie.png"/>
+                <img width="32px" height="32px" src="img/beanie.png" />
                 <h6 class="dropdown-header">Bereler</h6>
               </div>
 
@@ -422,7 +573,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/glasses.png"/>
+                <img width="32px" height="32px" src="img/glasses.png" />
                 <h6 class="dropdown-header">Boyunluklar ve Bandanalar</h6>
               </div>
 
@@ -434,7 +585,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/tent.png"/>
+                <img width="32px" height="32px" src="img/tent.png" />
                 <h6 class="dropdown-header">Çadırlar</h6>
               </div>
 
@@ -442,7 +593,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/camp-chair.png"/>
+                <img width="32px" height="32px" src="img/camp-chair.png" />
                 <h6 class="dropdown-header">Sandalyeler</h6>
               </div>
 
@@ -450,7 +601,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/flippers.png"/>
+                <img width="32px" height="32px" src="img/flippers.png" />
                 <h6 class="dropdown-header">Paletler</h6>
               </div>
 
@@ -461,7 +612,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/napkin.png"/>
+                <img width="32px" height="32px" src="img/napkin.png" />
                 <h6 class="dropdown-header">Havlular</h6>
               </div>
 
@@ -469,7 +620,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/sports.png"/>
+                <img width="32px" height="32px" src="img/sports.png" />
                 <h6 class="dropdown-header">Evde Spor Aletleri</h6>
               </div>
 
@@ -477,7 +628,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/yoga-mat.png"/>
+                <img width="32px" height="32px" src="img/yoga-mat.png" />
                 <h6 class="dropdown-header">Matlar</h6>
               </div>
 
@@ -485,7 +636,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/thermos.png"/>
+                <img width="32px" height="32px" src="img/thermos.png" />
                 <h6 class="dropdown-header">Termoslar</h6>
               </div>
 
@@ -493,7 +644,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/ball.png"/>
+                <img width="32px" height="32px" src="img/ball.png" />
                 <h6 class="dropdown-header">Toplar</h6>
               </div>
 
@@ -505,7 +656,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/tshirt.png"/>
+                <img width="32px" height="32px" src="img/tshirt.png" />
                 <h6 class="dropdown-header">Giyim</h6>
               </div>
 
@@ -519,7 +670,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/sneakers.png"/>
+                <img width="32px" height="32px" src="img/sneakers.png" />
                 <h6 class="dropdown-header">Ayakkabılar</h6>
               </div>
 
@@ -532,7 +683,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/swimsuit.png"/>
+                <img width="32px" height="32px" src="img/swimsuit.png" />
                 <h6 class="dropdown-header">Mayolar ve Bikiniler</h6>
               </div>
 
@@ -544,7 +695,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/diet.png"/>
+                <img width="32px" height="32px" src="img/diet.png" />
                 <h6 class="dropdown-header">Sağlık ve Beslenme</h6>
               </div>
 
@@ -555,7 +706,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/pharmacy.png"/>
+                <img width="32px" height="32px" src="img/pharmacy.png" />
                 <h6 class="dropdown-header">Destek & Medikal Ürünler</h6>
               </div>
 
@@ -568,7 +719,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/massager.png"/>
+                <img width="32px" height="32px" src="img/massager.png" />
                 <h6 class="dropdown-header">Masaj Aletleri</h6>
               </div>
 
@@ -579,7 +730,7 @@
             <div class="col-lg-3">
               <div class="d-flex text-center" style="border-bottom: 1px solid #ff9d14;">
 
-                <img width="32px" height="32px" src="img/coat.png"/>
+                <img width="32px" height="32px" src="img/coat.png" />
                 <h6 class="dropdown-header">Su Geçirmezler</h6>
               </div>
 
