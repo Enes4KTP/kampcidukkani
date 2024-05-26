@@ -2778,7 +2778,7 @@ fieldset:disabled a.btn {
 }
 
 .info-box {
-  background-color: #99a4b5;
+  background-color: #4b87e0;
   height: 15rem;
   padding: 20px;
   border-radius: 10px;
@@ -2788,6 +2788,14 @@ fieldset:disabled a.btn {
 
 .info-box img {
   height: 50%;
+}
+
+.info-box h5 {
+  color: black;
+}
+
+.info-box p {
+  color: white;
 }
 
 .btn-light {
